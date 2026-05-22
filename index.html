@@ -16,11 +16,44 @@ padding:15px;
 input{
 width:100%;
 padding:15px;
-border-radius:10px;
+border-radius:12px;
 border:none;
 margin-bottom:20px;
 font-size:16px;
 outline:none;
+box-sizing:border-box;
+}
+
+.header{
+background:#000;
+padding:12px;
+border-radius:12px;
+display:flex;
+align-items:center;
+margin-bottom:20px;
+}
+
+.logo{
+width:75px;
+height:75px;
+border-radius:50%;
+margin-right:12px;
+object-fit:cover;
+background:white;
+}
+
+.text h2{
+color:white;
+font-size:22px;
+margin:0;
+font-weight:bold;
+}
+
+.text p{
+color:#ddd;
+font-size:14px;
+margin-top:5px;
+line-height:1.4;
 }
 
 .grid{
@@ -35,12 +68,12 @@ padding:8px;
 border-radius:8px;
 }
 
-img{
+.card img{
 width:100%;
 border-radius:5px;
 }
 
-p{
+.card p{
 font-size:22px;
 margin:5px;
 color:black;
@@ -51,72 +84,64 @@ color:black;
 
 <body>
 
-<input id="search" placeholder="Cari nomor produk">
+<input id="search" placeholder="🔎 Cari Link">
+
+<div class="header">
+
+<img class="logo"
+src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/ce5c71626cd20765fe06544f877fce5624a739fe/Screenshot_20260522-181917_1.jpg">
+
+<div class="text">
+
+<h2>SELAMAT DATANG DI TOKO NEXORA</h2>
+
+<p>
+Ketik nomor produk pada kolom "CARI LINK" agar lebih cepat menemukan outfit favoritmu ✨
+</p>
+
+</div>
+</div>
+
 
 <div class="grid">
 
 <div class="card">
-
 <a href="https://s.shopee.co.id/AKXbWvUbjg" target="_blank">
-
 <img src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/17c18f1122b8d2d719694ddfa1b71186c198abfa/flux-pro-2.0_Fashion_portrait_photography_of_Gunakan_gambar_pertama_sebagai_dasar_latar_kain_-0%20(4).jpg">
-
 </a>
-
 <p>1</p>
-
 </div>
 
-  <div class="card">
-
-<a href="https://s.shopee.co.id/3VhIByb8G2">
-
+<div class="card">
+<a href="https://s.shopee.co.id/3VhIByb8G2" target="_blank">
 <img src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/ce5c71626cd20765fe06544f877fce5624a739fe/Screenshot_20260522-181917_1.jpg">
-
 </a>
-
 <p>2</p>
-
 </div>
 
-  <div class="card">
-
-<a href="https://s.shopee.co.id/BQqEfOxTB">
-
+<div class="card">
+<a href="https://s.shopee.co.id/BQqEfOxTB" target="_blank">
 <img src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/7daf9778fdd2652d0de94ff24f775fbec2c2703f/Screenshot_20260522-182844_1.jpg">
-
 </a>
-
 <p>3</p>
+</div>
 
-  </div>
-
-  <div class="card">
-
-<a href="https://s.shopee.co.id/5q5CzLRijI">
-
-<img src=" https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/8986a327b867026fb16430d0dbf1fadef69deda5/Screenshot_20260522-183544_1.jpg">
-
+<div class="card">
+<a href="https://s.shopee.co.id/5q5CzLRijI" target="_blank">
+<img src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/8986a327b867026fb16430d0dbf1fadef69deda5/Screenshot_20260522-183544_1.jpg">
 </a>
-
 <p>4</p>
+</div>
 
-  </div>
-
-  <div class="card">
-
-<a href="https://s.shopee.co.id/1BJNR7GO7e">
-
+<div class="card">
+<a href="https://s.shopee.co.id/1BJNR7GO7e" target="_blank">
 <img src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/5292e6aaa2f925e8f8947fbbf0592c110f6aa301/Screenshot_20260522-184006_1.jpg">
-
 </a>
-
 <p>5</p>
-
-  </div>
-  
+</div>
 
 </div>
+
 
 <script>
 
