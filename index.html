@@ -5,6 +5,7 @@
 <title>Nexora Picks</title>
 
 <style>
+
 body{
 background:#111;
 font-family:Arial;
@@ -19,6 +20,7 @@ border-radius:10px;
 border:none;
 margin-bottom:20px;
 font-size:16px;
+outline:none;
 }
 
 .grid{
@@ -39,27 +41,59 @@ border-radius:5px;
 }
 
 p{
-font-size:24px;
+font-size:22px;
 margin:5px;
 color:black;
 }
+
 </style>
 </head>
 
 <body>
 
-<input placeholder="Cari Link">
+<input id="search" placeholder="Cari nomor produk">
 
 <div class="grid">
 
 <div class="card">
+
 <a href="https://s.shopee.co.id/AKXbWvUbjg" target="_blank">
+
 <img src="https://raw.githubusercontent.com/mhmmdzhrfrdni/ofcl.nexora.id/17c18f1122b8d2d719694ddfa1b71186c198abfa/flux-pro-2.0_Fashion_portrait_photography_of_Gunakan_gambar_pertama_sebagai_dasar_latar_kain_-0%20(4).jpg">
+
 </a>
 
 <p>1</p>
+
 </div>
 
 </div>
+
+<script>
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let value=search.value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let text=card.innerText.toLowerCase();
+
+if(text.includes(value)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
